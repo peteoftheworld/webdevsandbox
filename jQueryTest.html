@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var myTitle = $("#titleId");
+        myTitle.click(function() {
+            alert(myTitle.attr("title"));
+        });
+    });
+    $(document).ready(function() {
+        var dumbPhilosophy = $("#dumb");
+        dumbPhilosophy.click(function() {
+            var myNumber = dumbPhilosophy.data("philosophy");
+            alert(myNumber + " is dumb");
+        });
+    });
+    
+    
+    
+    </script>
+
+
+
+<body>
+
+<div id="titleId" title="My Title">A Title!</div>
+<div id="dumb" data-philosophy="nihlism">A philosophy</div>
+
+</body>
+
+
+</head>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            alert("ready!");
+        });
+        //why doesn't this work?!
+    $("button#htmlTrigger").click(function() {
+        var htmlChanged = $("#htmlChange");
+        htmlChanged.html("Look at this shit!");
+    });
+
+    </script>
+</head>
+<body>
+    <div id="htmlChange">hello</div>
+    <!-- <div id="htmlChange" style="border: 5px solid black;width: 20%;height: 20%;">&nbsp;</div> -->
+    <button id="htmlTrigger">Click Me!</button>
+
+
+
+
+</body>
+</html>
